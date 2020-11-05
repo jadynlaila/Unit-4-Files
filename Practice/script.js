@@ -437,14 +437,174 @@
 // console.log(solution);
 
 //#8
+//unfinished
+// let input = 5;
+// for(i = 1; i > input; i++){
+//     if(i > input){
+//     }
+//}
 
-let input = 5;
-for(i = 1; i > input; i++){
-    if(i > input){
-        
-    }
+
+
+//ARRAYS 
+
+// let arr = [];
+// let colors = [`red`, `red${i}`, `orange`]
+
+// array[2]; //this represents orange
+
+//array practice
+
+
+
+// let arr = [1,2,3,4];
+// console.log(arr.length);
+
+// arr[150] = 10;
+// console.log(arr.length);
+
+// arr.push(3);
+
+// let end = arr.pop();
+// console.log(end);
+// console.log(arr.length);
+// end = arr.pop();
+// console.log(end);
+// console.log(arr.length);
+// console.log(arr);
+
+
+let box1 = [1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31];
+let box2 = [2,3,6,7,10,11,14,15,18,19,22,23,26,27,30,31];
+let box3 = [4,5,6,7,12,13,14,15,20,21,22,23,28,29,30,31];
+let box4 = [8,9,10,11,12,13,14,15,24,25,26,27,28,29,30,31];
+let box5 = [16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
+// console.log(box1);
+// console.log(box2);
+// console.log(box3);
+// console.log(box4);
+// console.log(box5);
+// box3[10] = 22;
+// box4[6] = 14;
+// box5[15] = 31;
+// box1[9] = 19;
+// box2[11] = 23;
+// box2[box2.length-1]
+
+//wrong lolz 
+// let input = 1;
+// let binaryarr = []
+// for(i = 0; i < 1; i++){
+//     if(input = box1){
+//         binaryarr.push(1);
+//     }else{
+//         binaryarr.push(0);
+//         break;
+//     }
+// }
+// for(i = 0; i < 1; i++){
+//     if(input = box2){
+//         binaryarr.push(1);
+//     }else{
+//         binaryarr.push(0);
+//         break;
+//     }
+// }
+// for(i = 0; i < 1; i++){
+//     if(input = box3){
+//         binaryarr.push(1);
+//     }else{
+//         binaryarr.push(0);
+//         break;
+//     }
+// }
+// for(i = 0; i < 1; i++){
+//     if(input = box4){
+//         binaryarr.push(1);
+//     }else{
+//         binaryarr.push(0);
+//         break;
+//     }
+// }
+// for(i = 0; i < 1; i++){
+//     if(input = box5){
+//         binaryarr.push(1);
+//     }else{
+//         binaryarr.push(0);
+//         break;
+//     }
+// }
+// console.log(binaryarr);
+//wrong lolz ^^
+//right kind of i think i copied idk 
+// let input = 19;
+// let output = [];
+// loop: 
+// while(true){
+//     for(let i = 0; i < box5.length; i++){
+//         if(input == box5[i]){
+//             output += "1 ";
+//             break;
+//         }
+//     }
+//     output += "0 ";
+//     break loop;
+// }
+
+// loop: 
+// while(true){
+//     for(let i = 0; i < box4.length; i++){
+//         if(input == box4[i]){
+//             output += "1 ";
+//             break;
+//         }
+//     }
+//     output += "0 ";
+//     break loop;
+// }
+
+// loop: 
+// while(true){
+//     for(let i = 0; i < box3.length; i++){
+//         if(input == box3[i]){
+//             output += "1 ";
+//             break;
+//         }
+//     }
+//     output += "0 ";
+//     break loop;
+// }
+
+// loop: 
+// while(true){
+//     for(let i = 0; i < box2.length; i++){
+//         if(input == box2[i]){
+//             output += "1 ";
+//             break;
+//         }
+//     }
+//     output += "0 ";
+//     break loop;
+// }
+
+// loop: 
+// while(true){
+//     for(let i = 0; i < box1.length; i++){
+//         if(input == box1[i]){
+//             output += "1 ";
+//             break;
+//         }
+//     }
+//     output += "0 ";
+//     break loop;
+// }
+// console.log(output);
+
+let input = "classic";
+let music = ["jazz", "blues"];
+music.push("R&B");
+if(music.length % 2 == 1){
+    music[Math.floor(music.length / 2)] = input;
 }
-
-
-
-
+music.unshift("rap", "acapella");
+console.log(music);
