@@ -1,0 +1,31 @@
+html{
+    background-color: lightblue;
+}
+body{
+    display: grid;
+    min-height: 100vh;
+}
+h1{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+button{
+    margin:auto auto;
+    font-size:larger;
+    font-weight: bolder;
+    height:100px;
+    width:100px;
+    border-radius: 50px;
+    border: none;
+}
+button:active{
+    background-color:blue;
+}
+
+.buttons{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 90vh;
+}

@@ -1,0 +1,16 @@
+button{
+    height: 100px;
+    width: 200px;
+    font-size: larger;
+    background-color: orange;
+    font-weight: bold;
+    border-radius: 50px;
+    margin:auto;
+
+}
+
+body{
+    margin: auto;
+    display: grid;
+    min-height: 100vh;
+}
