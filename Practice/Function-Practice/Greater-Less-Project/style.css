@@ -1,0 +1,14 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+p{
+    justify-self: center;
+}
