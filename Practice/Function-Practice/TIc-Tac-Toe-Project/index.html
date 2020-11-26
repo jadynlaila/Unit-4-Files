@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<meta name=”author” content='Jadyn Calhoun'>
+<meta name='description' content=''>
+<meta property='og: image' content=''>
+<meta property='og: title' content=''>
+<meta property='og: description' content=''>
+<title>Tic-Tac-Toe</title>
+<link rel='stylesheet' href='style.css'>
+<!-- <link rel='shortcut icon' href='Untitled.png', 'type='image/x-icon'> -->
+</head>
+<body>
+    
+    <header>
+        <h1>Tic-Tac-Toe</h1>
+    </header>
+    <main>
+        <div class="players">
+            <h4 id="play1">Player 1 - 0</h4>
+            <h4 id="turn">Turn </h4>
+            <h4 id="play2">Player 2 - 0</h4>
+        </div>
+        <div class="winCounter">
+            <h4 id=play1Wins">Wins - 0</h4>
+            <h1 id="break"></h1>
+            <h4 id="play2Wins">Wins - 0</h4>
+        </div>
+        <div class="boxes">
+            <section class="row1">
+                <button id="a1" onclick="choseCell()"></button>
+                <button id="a2" onclick="choseCell()"></></button>
+                <button id="a3" onclick="choseCell()"></></button>
+            </section>
+            <section class="row2">
+                <button id="b1"></button>
+                <button id="b2"></button>
+                <button id="b3"></button>
+            </section>
+            <section class="row3">
+                <button id="c1"></button>
+                <button id="c2"></button>
+                <button id="c3"></button>
+            </section>
+        </div>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
