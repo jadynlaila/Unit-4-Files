@@ -31,17 +31,12 @@ h1{
 
 .players{
     display: flex;
-    /* align-items: flex-end; */
-    /* justify-content: center; */
+    align-items: flex-end;
+    justify-content: center;
     font-size: 20px;
     margin-top: 20px;
-    /* grid-template-columns: 20% 60% 20%;
-    grid-template-rows: auto; */
-}
-
-#play1{
-    position: relative;
-    left: 20px;
+    grid-template-columns: 100px 200px 100px;
+    grid-template-rows: auto;
 }
 
 .winCounter{
@@ -50,65 +45,81 @@ h1{
     justify-content: center;
     margin-bottom: 60px;
     font-size: 15px;
+    grid-template-columns: 100px 200px 100px;
+    grid-template-rows: auto;
 }
 
 
 
-#break{
+.break{
     margin-left: 300px;
     margin-right: 300px;
 }
 
-button{
+.cell{
     height: 125px;
     width: 125px;
     display: flex;
     justify-content: center;
-    border: 2px solid black;
-    color: grey;
+    border: 2px solid white;
 }
 
-section{
-    display: grid; 
-    grid-template-columns: 125px 125px 125px;
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
     grid-template-rows: auto;
-    justify-content: center;
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
-    
 }
 
-#a1{
+.play1Spot{
+    align-content: center;
+    font-size: 50px;
+}
+
+.play2Spot{
+    align-content: center;
+    font-size: 50px;
+}
+
+#winner{
+    color: green;
+    background-color: green;
+}
+#cell11{
     border-top-style: none;
     border-left-style: none;
 }
 
-#a2{
+#cell12{
     border-top-style: none;
 }
 
-#a3{
+#cell13{
     border-top-style: none;
     border-right-style: none;
 }
 
-#b1{
+#cell21{
     border-left-style: none;
 }
 
-#b3{
+#cell23{
     border-right-style: none;
 }
 
-#c1{
+#cell31{
     border-left-style: none;
     border-bottom-style: none;
 }
 
-#c2{
+#cell32{
     border-bottom-style: none;
 }
 
-#c3{
+#cell33{
     border-bottom-style: none;
     border-right-style: none;
 }
