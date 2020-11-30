@@ -9,8 +9,8 @@ document.getElementById(`whosTurn`).textContent = `${player1}'s turn!`
 let gameStatus = true;
 let turnCount = 1;
 let squares = [document.getElementById('cell11'),document.getElementById('cell12'),document.getElementById('cell13'),document.getElementById('cell21'),document.getElementById('cell22'),document.getElementById('cell23'),document.getElementById('cell31'),document.getElementById('cell32'),document.getElementById('cell33'),]
-let play1Wins = 0;
-let play2Wins = 0;
+let play1WinsCount = 0;
+let play2WinsCount = 0;
 
 
 // will happen everytime a cell is clicked and will track whos turn it is and how many turns have gone
@@ -165,28 +165,31 @@ function checkWin(){
 }
 //171 and 188 are problem areas
 function weHaveAWinner(winner){
+    console.log(`hellp`)
+    //its getting to this point but doesnt recognize the id for some reason ?
     if(winner = `player1`){
-        play1Wins ++;
-        console.log(play1Wins);
-        document.getElementById(`play1Wins`).textContent = `Wins - ${play1Wins}`
+        play1WinsCount ++;
+        console.log(play1WinsCount);
+        document.getElementById(`play1Wins`).textContent = `Wins - ${play1WinsCount}`
     }
     else if (winner = `player2`){
-        play2Wins++;
-        document.getElementById(`play2Wins`).textContent = `Wins - ${play2Wins}`;
+        play2WinsCount++;
+        document.getElementById(`play2Wins`).textContent = `Wins - ${play2WinsCount}`;
     }
     gameStatus = false;
     return;
 }
 function resetGame(){
     for(let i = 0; i < squares.length; i++){
-        squares[i].classList.remove("play1Spot");
-        squares[i].classList.remove("play2Spot");
+        squares[i].classList.remove("winner");
+        squares[i].classList.remove("winner");
         squares[i].textContent = "";
     }
 
     for(let i = 0; i <= 9; i++){
-        // document.getElementsByClassName("squares")[i].textContent = "";
-        // document.getElementsByClassName("squares")[i].classList.remove("weHaveAWinner");
+        //dont think this is the way, but dont know how to select all items of the array so that i can remove the classes
+        document.getElementsByClassName("squares")[i].textContent = "";
+        document.getElementsByClassName("squares")[i].classList.remove("weHaveAWinner");
     }
     
     gameStatus = true;
