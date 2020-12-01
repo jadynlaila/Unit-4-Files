@@ -78,16 +78,6 @@ h1{
 }
 
 
-/* .play1Spot{
-    align-content: center;
-    font-size: 50px;
-}
-
-.play2Spot{
-    align-content: center;
-    font-size: 50px;
-} */
-
 .restart{
     width: 375px;
     display: flex;
@@ -98,7 +88,8 @@ h1{
 }
 
 .restartButton{
-    padding-left: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
     border-radius: 15px;
     background-color: grey;
 }

@@ -22,7 +22,9 @@ function turnCounter() {
         document.getElementById("whosTurn").textContent = `${player2}'s turn!`
     }
     turnCount++;
-
+    if(turnCount == 10){
+        alert("Tie game! Restart!")
+    }
     return turnCount;
 }
 
@@ -162,6 +164,7 @@ function checkWin() {
         weHaveAWinner(`player2`);
         return;
     }
+    
 }
 //171 and 188 are problem areas
 function weHaveAWinner(winner) {
